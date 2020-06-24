@@ -1,11 +1,15 @@
 print('=' * 46)
 print('{:^46}'.format('ANÁLISE STR 2 DO VICENTÃO'))
 print('=' * 46)
-n = str(input('Digite um N° de 4 dig: '))
+n = int(input('Digite um N° de até 4 dig: '))
+nq = f'{n:04}'
+line = '\n'
 print(
-    '\n',
-    'unidade:', n[3], '\n',
-    'dezena:', n[2], '\n',
-    'centena:', n[1], '\n',
-    'milhar:', n[0], '\n'
+    f'{line}',
+    f'unidade: {nq[3]}{line}',
+    f'dezena: {nq[2]}{line}',
+    f'centena: {nq[1]}{line}',
+    f'milhar: {nq[0]}{line}'
 )
+# SÓ TA ACEITANDO N DE ATÉ 4 DIGITOS, VEJA ex023alt.py
+
